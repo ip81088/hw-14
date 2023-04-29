@@ -1,0 +1,10 @@
+---
+- name: Deploy file to /tmp/test1
+  copy:
+    src: files/test1.txt
+    dest: /tmp/test1
+- name: Deploy template to /tmp/test2
+  template:
+    src: templates/test2.txt
+    dest: /tmp/test2
+
