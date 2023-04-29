@@ -1,0 +1,8 @@
+ ---
+ - name: Install VIM and ZIP
+   become: true
+   apt:
+     name:
+       - vim
+       - zip
+     state: present
